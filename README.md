@@ -11,5 +11,3 @@ Our findings underscore the efficacy of mid-infrared (MIR) spectroscopy coupled 
 ## Acknowledgments
 
 We thank all the participants and coaches from Stade Rennais FC and Sojasun Espoir for their committed efforts in participating in the present study. D.M., F.D, and V.B acknowledge funding from the ANR within the framework of the PIA EUR DIGISPORT project (ANR-18-EURE-0022).
-
-

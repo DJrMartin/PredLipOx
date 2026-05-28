@@ -72,7 +72,7 @@ caret::confusionMatrix(data=as.factor(pred>0.35),
                        reference = as.factor(CALIBRATION$Y_lipides>0.35))
 pROC::roc(CALIBRATION$Y_lipides>0.35~pred)
 
-svg("figures/figure2.svg", width = 12, height = 6)
+svg("figures/figure_2.svg", width = 12, height = 6)
 layout(matrix(c(1,2), nrow=1))
 ## Prediction en fonction de l'oxidation lipidique observée.
 id.pred <- as.numeric(unique(rownames(as.matrix(PRED))))
@@ -142,7 +142,7 @@ freq_imp <- c(freq[fingerprint][seq(4,L,by=7)][w7],
   freq[fingerprint][seq(3,L,by=5)][w5],
   freq[fingerprint][seq(2,L,by=3)][w3])
 
-svg("figures/figure3.svg", width = 12, height = 6)
+svg("figures/figure_3.svg", width = 12, height = 6)
 layout(matrix(c(1,1,2,2,
                 1,1,3,3), nrow = 2, byrow=T))
 par(mar=c(5,4,5,2))

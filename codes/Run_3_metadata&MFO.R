@@ -74,7 +74,7 @@ mean_bike <- apply(df_spectro[which(df_spectro$CALIBRATION.Groupe=="BIKE"),-c(1:
 sd_bike <- apply(df_spectro_sd[which(df_spectro_sd$CALIBRATION.Groupe=="BIKE"),-c(1:3)], 2, function(x) mean(x[is.na(x)==FALSE]))
 
 ## PLOT FOR BIKE GROUP.
-svg("figures/figure1.svg", width = 7, height = 4)
+svg("figures/figure_1.svg", width = 7, height = 4)
 par(mar = c(5, 5, 2, 2))
 plot(mean_bike, type='b', ylim=c(0,1.5), xlab='Duration of the submaximal test (minutes)', 
      ylab = expression("Maximal Fat Oxidation (g." * min^{-1} * ")"), col=col.group[3], pch=15, axes=F)
